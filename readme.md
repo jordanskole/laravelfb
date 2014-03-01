@@ -1,21 +1,29 @@
-## Laravel PHP Framework
+## Laravel FB Login Quickstart
 
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/version.png)](https://packagist.org/packages/laravel/framework) [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.png)](https://packagist.org/packages/laravel/framework) [![Build Status](https://travis-ci.org/laravel/framework.png)](https://travis-ci.org/laravel/framework)
+This repo is a quick way to spin up a simple laravel application using fb login for user registration & management. It is meant to be deployed on the [pagodabox](https://pagodabox.com/) PaaS. It uses bootstrap, font-awesome, and Jeffery Way's laravel generators.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+### Getting Started
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+#### Spin up Laravel using composer
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+1. clone this repo into your working directory. 
+2. Run `composer install`
+3. Run `composer update`
 
-## Official Documentation
+#### Setup a db & migrate
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+1. Create a new mysql db and user.
+2. Replace my default db credentials in `/app/config/database.php`
+3. Run `php artisan migrate` from your working directory.
 
-### Contributing To Laravel
+#### Setup fb application
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+1. Head to [developers.fb.com](https://developers.facebook.com/) and create a new application
+2. Set your app domains to use your new domains (inside your app settings on dev.fb.com)
+3. Replace my dummy credentials in `app/config/facebook.php`
 
-### License
+#### Optional Install Bower
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+1. Install [node.js & npm](http://nodejs.org/)
+2. Install Bower - `npm install -g bower`
+3. Explain to be how to use Bower & Grunt. 
