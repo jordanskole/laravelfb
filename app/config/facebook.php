@@ -2,7 +2,9 @@
 // app/config/facebook.php
  
 // Facebook app Config 
+// Check the readme for getting started directions 
+
 return array(
-        'appId' => '597403163679471',
-        'secret' => 'd53f6d20418da1ac28414fa277ca8677'
+        'appId' => 'your_app_id',
+        'secret' => 'your_app_secret'
     );
