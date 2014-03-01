@@ -22,7 +22,7 @@ This repo is a quick way to spin up a simple laravel application using fb login 
 2. Set your app domains to use your new domains (inside your app settings on dev.fb.com)
 3. Replace my dummy credentials in `app/config/facebook.php`
 
-#### Optional Install Bower
+#### Optional Install Bower 
 
 1. Install [node.js & npm](http://nodejs.org/)
 2. Install Bower - `npm install -g bower`
